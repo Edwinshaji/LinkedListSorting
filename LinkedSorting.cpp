@@ -8,3 +8,13 @@ struct node
     struct node *next;
 };
 typedef struct node NODE;
+
+class Link
+{
+    NODE *p;
+
+    public:
+        void createNode();
+        void displayNode();
+        void sortNode();
+};
