@@ -61,4 +61,40 @@ void Link ::displayNode()
     cout<<"NULL";
 }
 
+//function for Sorting Linked List
+void Link::sortNode()
+{
+    NODE *prev,*n,*temp;
+
+    temp=new NODE;
+
+    prev=p;
+    n=prev->next;
+
+    while(prev->next!=NULL)
+    {
+        while(n!=NULL)
+        {
+            if(prev->item>n->item)
+            {
+                temp->item=prev->item;
+                prev->item=n->item;
+                n->item=temp->item;
+                n=n->next;
+            }
+            else{
+                n=n->next;
+            }
+
+        }
+        prev=prev->next;
+        n=prev->next;
+        if(n->next==NULL)
+        {
+
+        }
+    }
+}
+
+
 
