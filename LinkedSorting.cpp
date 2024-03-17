@@ -47,3 +47,18 @@ void Link :: createNode()
     }
 }
 
+//function for Displaying the Linked List
+void Link ::displayNode()
+{
+    NODE *t;
+
+    t=p;
+
+    while(t!=NULL){
+        cout<<t->item<<"-->";
+        t=t->next;
+    }
+    cout<<"NULL";
+}
+
+
