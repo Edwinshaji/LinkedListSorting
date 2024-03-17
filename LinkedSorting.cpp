@@ -97,4 +97,16 @@ void Link::sortNode()
 }
 
 
+//Main Function
+int main()
+{
+    Link l;
+    l.createNode();
+    cout<<"\n\nOriginal Linked List :  ";
+    l.displayNode();
+    l.sortNode();
+    cout<<"\n\nSorted Linked List :  ";
+    l.displayNode();
+}
+
 
